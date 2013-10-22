@@ -129,7 +129,7 @@ License
 Version history
 ---------------
 
- * 1.3.0 Add support for 720p resolution.
+ * 1.3.0 Add support for 720p resolution and NuGet Package Restore.
  * 1.2.0 Changes in implementation to support upgrading the application to Windows Phone 8.0.
  * 1.1.0 Bug fixes and changes based on reviews; published on the Nokia Developer website.
  * 1.0.3 Support for Windows Phone OS version 7.1.
