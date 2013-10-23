@@ -1,14 +1,25 @@
 RSS Reader
 ==========
 
-This example application demonstrates how to build a simple RSS reader for Windows Phone using Microsoft Silverlight.
+This example application demonstrates how to build a simple RSS reader for
+Windows Phone using Microsoft Silverlight.
 
-While testing for compatibility with Windows Phone 8, it was found out that the previous implementation did not work after upgrading the project to Windows Phone 8.0. It seems that there is some kind of a bug in the Panorama control, causing problems if PanoramaItems are created dynamically using ItemsSource property. For example, the Panorama's SelectedIndex does not work while using ItemsSource and also, when navigating back to the panorama, it always resets back to the first PanoramaItem, not the one which was visible when navigating deeper.
+While testing for compatibility with Windows Phone 8, it was found out that the
+previous implementation did not work after upgrading the project to Windows
+Phone 8.0. It seems that there is some kind of a bug in the Panorama control,
+causing problems if PanoramaItems are created dynamically using ItemsSource
+property. For example, the Panorama's SelectedIndex does not work while using
+ItemsSource and also, when navigating back to the panorama, it always resets
+back to the first PanoramaItem, not the one which was visible when navigating
+deeper.
 
-For this reason, there are now four explicitly defined PanoramaItems in the main panorama (News, Leisure, Sports, and Tech), and there is a DataMember in RSSCache for retrieving contents for each of the four pages. Bug report has been filed to Microsoft regarding the issue.
+For this reason, there are now four explicitly defined PanoramaItems in the main
+panorama (News, Leisure, Sports, and Tech), and there is a DataMember in
+RSSCache for retrieving contents for each of the four pages. Bug report has been
+filed to Microsoft regarding the issue.
 
 This example application is hosted in GitHub:
-https://github.com/nokia-developer/rss-reader
+https://github.com/nokia-developer/rss-reader-wp
 
 Developed with:
  * Microsoft Visual Studio 2010 Express for Windows Phone
@@ -33,20 +44,24 @@ Make sure you have the following installed:
 
  * Windows 8
  * Windows Phone SDK 8.0
- * NuGet Package Manager (https://nuget.org/), Visual Studio extension to install and update third-party libraries and tools in Visual Studio
+ * NuGet Package Manager (https://nuget.org/), Visual Studio extension to
+ install and update third-party libraries and tools in Visual Studio
 
 To build and run the sample:
 
  * Open the SLN file
    * File > Open Project, select the file RSSReader.sln
  * Install Windows Phone Toolkit for the project.
-   * Right click solution RSSReader in Solution Explorer -> select Manage NuGet Packages for Solution
+   * Right click solution RSSReader in Solution Explorer -> select Manage NuGet
+     Packages for Solution
    * Search for 'wptoolkit' and install the 'Windows Phone toolkit' package 
  * Select the target, for example 'Emulator WVGA'.
  * Press F5 to build the project and run it on the Windows Phone Emulator.
 
 To deploy the sample on Windows Phone device:
- * See the official documentation for deploying and testing applications on Windows Phone devices at http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402565(v=vs.105).aspx
+ * See the official documentation for deploying and testing applications on
+ Windows Phone devices at
+ http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402565(v=vs.105).aspx
 
 
 About the implementation
